@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     int arr[] = {1,2,2,3,3,3,3,3,4,4,5,8,9};
     int x;
-    cout<<"enter your target: ";
+    cout<<"enter your target:";
     cin>>x;
     int lo = arr[0];
     int hi = arr[12];
