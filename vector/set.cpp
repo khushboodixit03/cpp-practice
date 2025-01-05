@@ -10,5 +10,6 @@ int main(){
     for(int i:s){
         cout<<i;
     }
-   /**/
+   
+/**/
 }
