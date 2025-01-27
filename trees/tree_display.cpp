@@ -13,6 +13,17 @@ Node(int val){
   this->right = NULL;
 }
 };
+
+void display(Node* root){
+
+  if(root == NULL) return ;
+  
+  cout<<root->val<<" ";
+  display(root->left);
+  display(root->right);
+}
+
+
 int main(){
  Node* a = new Node(23);
   Node* b = new Node(24);
@@ -25,4 +36,6 @@ int main(){
   b->left = d;
   c->right = e;
   cout<<a->val;
+  cout<<endl;
+  display(a);
 }

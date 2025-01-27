@@ -13,6 +13,23 @@ Node(int val){
   this->right = NULL;
 }
 };
+
+void display(Node* root){
+
+  if(root == NULL) return ;
+  
+  cout<<root->val<<" ";
+  display(root->left);
+  display(root->right);
+}
+
+int sum(Node* root){
+
+  if(root == NULL) return 0;
+  int sumnode = root->val + sum(root->left) + sum(root->right);
+  return sumnode;
+}
+
 int main(){
  Node* a = new Node(23);
   Node* b = new Node(24);
@@ -25,4 +42,8 @@ int main(){
   b->left = d;
   c->right = e;
   cout<<a->val;
+  cout<<endl;
+  display(a);
+  cout<<endl;
+  cout<<sum(a);
 }
