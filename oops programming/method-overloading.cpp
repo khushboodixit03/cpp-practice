@@ -21,19 +21,19 @@ Teacher(string name , double salary , string department , string id)
 
 void rectangle()
 {
-    cout<<"Parth loves Khushboo"; 
+    cout<<"HELLO"; 
 }
 
 void rectangle(double salary)
 {
-    cout<<"Parth loves Khushboo and his salary is "<<salary;
+    cout<<"my salary is  "<<salary;
 }
 
 };
 
 int main(){
   
-Teacher t1("Khushboo",25000,"Computer Science","34");
+Teacher t1("Parth",25000,"Computer Science","34");
 
 t1.rectangle(25000);
 
