@@ -51,6 +51,7 @@ int main(){
     b->right = e;
     c->left = f;
     c->right = g;
+
     
     preorder(a);
     cout<<endl;
