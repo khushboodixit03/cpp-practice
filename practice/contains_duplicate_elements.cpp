@@ -5,9 +5,11 @@ using namespace std;
 bool contains_duplicate(vector<int> &v){
 int n = v.size();
 sort(v.begin(), v.end());
-for(int i = 0; i < n; i++){
-    if(v[i] == v[i+1]) cout<<"true";
+bool flag = false;
+for(int i = 0; i < n-1; i++){
+    if(v[i] == v[i+1]) flag = true;
 }
+if(flag == true) return true;
 return false;
 }
 int main(){
@@ -20,5 +22,5 @@ int main(){
         cin>>x;
         v.push_back(x);
      }
-     contains_duplicate(v);
+    cout<<contains_duplicate(v);
 }

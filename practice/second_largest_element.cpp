@@ -10,7 +10,7 @@ void second_largest(vector<int> &v){
     }
     int s_max = INT_MIN;
     for(int i = 0; i < n; i++){
-        if(v[i] > s_max && s_max != maxi) s_max = v[i];
+        if(v[i] > s_max && v[i] != maxi) s_max = v[i];
     }
     cout<<s_max;
 
